@@ -52,7 +52,11 @@ router.get("/:id", (req, res) => {
     //   res.status(404).json({message: "no product found with this id"});
     //   return;
     // }
+    console.log(dbProductData);
     res.json(dbProductData);
+    // console.log(Object.keys(dbProductData)[0])
+    // return res.json(Object.keys(dbProductData)[0])
+
   })
   .catch(err => {
     console.log(err);
