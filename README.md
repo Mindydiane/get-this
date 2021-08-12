@@ -7,13 +7,10 @@
 ### It can : 🎊 🎉
 * CREATE - When life throws something new that needs to be added! ✔️
 * UPDATE - When something is mistyped or it changed (Hey, it happens!) ✅
-* GET/READ INFO- It is good be able to check the current information in the database. ✳️ ✴️
+* GET/READ INFO- It is good to be able to check the current information in the database. ✳️ ✴️
 * DELETE - Let's face it, sometimes it is better to delete and make room for something better. ❇️ 
 
-
 ### Get This! It is a back end for an e-commerce site or any retail company.
-
-
 
 ### Synchronize Express and configured it to use Sequelize to interact with a MySQL database.
 
