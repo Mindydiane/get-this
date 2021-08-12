@@ -28,7 +28,8 @@
 #DEMO
 ![get-this-demo](https://user-images.githubusercontent.com/80286982/129137032-4107091e-c005-49bf-bde4-ebf420378864.gif)
 
-## Go to the YouTube link to see CRUD in full action!!(create, read, update, delete)
+## Go to the YouTube link to see CRUD in full action!!
+### (create, read, update, delete)
 
 ## YouTube Link
 https://youtu.be/HvDUnIYrMLU
