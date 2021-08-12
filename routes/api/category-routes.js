@@ -39,9 +39,10 @@ router.get("/:id", (req, res) => {
       //   res.status(404).json({ message: "No catgory found with this id" });
       //   return;
       // }
-      // res.json(dbCategoryData);
-      console.log(Object.keys(dbCategoryData)[0])
-      return res.json(Object.keys(dbCategoryData)[0])
+      console.log(dbCategoryData);
+      res.json(dbCategoryData);
+      // console.log(Object.keys(dbCategoryData)[0])
+      // return res.json(Object.keys(dbCategoryData)[0])
     })
     .catch((err) => {
       console.log(err);

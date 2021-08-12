@@ -87,6 +87,7 @@ router.post("/", (req, res) => {
         return ProductTag.bulkCreate(productTagIdArr);
       }
       // if no product tags, just respond
+      console.log(product);
       res.status(200).json(product);
     })
     .then((productTagIds) => res.status(200).json(productTagIds))
@@ -124,7 +125,8 @@ router.put("/:id", (req, res) => {
       const productTagsToRemove = productTags
         .filter(({ tag_id }) => !req.body.tagIds.includes(tag_id))
         .map(({ id }) => id);
-
+      
+      console.log(Promise, ProductTag)  
       // run both actions
       return Promise.all([
         ProductTag.destroy({ where: { id: productTagsToRemove } }),
@@ -150,6 +152,7 @@ router.delete("/:id", (req, res) => {
       res.status(404).json({message: "No product found with this id"});
       return;
     }
+    console.log(dbProductData);
     res.json(dbProductData);
   })
   .catch(err => {
