@@ -102,7 +102,7 @@ router.put("/:id", (req, res) => {
   // update product data
   Product.update(req.body, {
     where: {
-      id: req.params.id,
+      id: req.params,
     },
   })
     .then((product) => {
@@ -152,7 +152,7 @@ router.delete("/:id", (req, res) => {
       res.status(404).json({message: "No product found with this id"});
       return;
     }
-    console.log(dbProductData);
+    console.log(dbProductData)
     res.json(dbProductData);
   })
   .catch(err => {

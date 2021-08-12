@@ -25,7 +25,7 @@ router.get("/:id", (req, res) => {
   // find one category by its `id` value
   Category.findOne({
     where: {
-      id: req.params_id,
+      id: req.params.id,
     },
     // be sure to include its associated Products
     include: [
@@ -93,6 +93,7 @@ router.delete("/:id", (req, res) => {
         res.status(404).json({ message: "No category found with this id" });
         return;
       }
+      console.log(dbCategoryData);
       res.json(dbCategoryData);
     })
     .catch((err) => {
